@@ -1,23 +1,25 @@
 import logo from './logo.svg';
 import './App.css';
+import Timer from './components/Timer'
+import ToggleSwitch from "./components/ToggleSwitch";
+import SearchElement from "./components/SearchElement";
+import ToDoList from "./components/ToDoList.tsx";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+
+        <h1>React Assignment</h1>
+
+        <Timer />
+        {/* Component for toggle button */}
+        <ToggleSwitch />
+
+        {/* Component for the search filter */}
+        <SearchElement />
+
+        {/* To Do List */}
+        <ToDoList />
     </div>
   );
 }
